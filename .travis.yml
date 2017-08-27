@@ -1,0 +1,4 @@
+language: java
+jdk:
+  - oraclejdk8
+script: cd chat_service && mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 && cd ../chat_broadcast_sse &&  mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8
